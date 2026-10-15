@@ -18,3 +18,16 @@
 @media(max-width:650px){.hero{min-height:790px;background-position:center center;background-size:auto 100%}.hero:before{background:linear-gradient(180deg,rgba(255,249,216,.82) 0%,rgba(255,249,216,.5) 44%,transparent 80%)}.hero-copy{padding-top:38px}.hero h1{font-size:clamp(48px,12vw,76px)}.hero .lead{font-size:14px}.hero-scene{height:210px}.hero-scene .bowl{right:-20px;bottom:-24px;scale:.52;transform-origin:right bottom}.hero-scene .coconut.left{scale:.55;left:-26px;top:23%}.hero-scene .stamp{scale:.55;right:5%;bottom:50px}.hero-scene .chip{scale:.75}.hero .scroll{margin-bottom:6px}}
 @media(max-width:380px){.hero{min-height:735px}.hero h1{font-size:clamp(45px,11.7vw,58px)}.hero-copy{padding-top:24px}.hero-scene{height:180px}}
 @media(prefers-reduced-motion:reduce){.hero .chip,.hero .droplet{animation:none}}
+
+/* Static premium hero — use approved image asset, no animated graphics */
+.hero{background:#faf1cf url('/assets/tropical-hero.webp') center center / cover no-repeat;min-height:clamp(680px,59vw,910px);isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse at 50% 35%,rgba(255,250,227,.25),transparent 68%)}
+.hero-meta,.hero-copy,.hero .scroll{position:relative;z-index:2}
+.hero-copy{margin:clamp(70px,7vw,115px) auto 90px;padding:0 18px;background:transparent;border:0;border-radius:0;box-shadow:none;backdrop-filter:none;max-width:1000px}
+.hero h1{font-size:clamp(60px,8.2vw,128px);line-height:.9;max-width:100%}
+.hero-scene,.hero>.leaf{display:none!important}
+.hero .chip,.hero .droplet,.hero .ticker-inner{animation:none!important}
+@media(max-width:950px){.hero{min-height:700px;background-position:center center}.hero-copy{margin-top:92px}.hero h1{font-size:clamp(56px,9.5vw,100px)}}
+@media(max-width:640px){.hero{min-height:735px;background-size:auto 100%;background-position:52% center}.hero::before{background:linear-gradient(180deg,rgba(255,251,228,.88),rgba(255,250,224,.62) 44%,rgba(255,250,224,.08) 74%)}.hero-copy{margin:75px auto 35px;padding:0 12px}.hero h1{font-size:clamp(48px,12vw,73px)}.hero .lead{font-size:14px}.hero .scroll{margin-top:auto}}
+@media(max-width:390px){.hero{min-height:700px}.hero h1{font-size:clamp(44px,11.6vw,56px)}}
+@media(prefers-reduced-motion:reduce){.hero *, .ticker-inner{animation:none!important}}
