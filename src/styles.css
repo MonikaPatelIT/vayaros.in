@@ -31,3 +31,9 @@
 @media(max-width:640px){.hero{min-height:735px;background-size:auto 100%;background-position:52% center}.hero::before{background:linear-gradient(180deg,rgba(255,251,228,.88),rgba(255,250,224,.62) 44%,rgba(255,250,224,.08) 74%)}.hero-copy{margin:75px auto 35px;padding:0 12px}.hero h1{font-size:clamp(48px,12vw,73px)}.hero .lead{font-size:14px}.hero .scroll{margin-top:auto}}
 @media(max-width:390px){.hero{min-height:700px}.hero h1{font-size:clamp(44px,11.6vw,56px)}}
 @media(prefers-reduced-motion:reduce){.hero *, .ticker-inner{animation:none!important}}
+
+/* Simplified Vayaros header and hero — October 2026 */
+header.centered-header{display:flex;justify-content:center;align-items:center;min-height:92px;padding:14px 20px;background:#faf4e5}
+.centered-header .logo{font-size:clamp(38px,4vw,54px);line-height:1.1}
+.hero .hero-meta,.hero .scroll{display:none}
+@media(max-width:650px){header.centered-header{min-height:76px;padding:12px 16px}.centered-header .logo{font-size:40px}}
