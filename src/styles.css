@@ -44,3 +44,9 @@ header.centered-header{display:flex;justify-content:center;align-items:center;mi
 .banner-botanical{position:absolute;right:0;bottom:0;height:100%;width:min(40%,650px);object-fit:cover;object-position:right center;pointer-events:none;z-index:1}
 @media(max-width:800px){.banner{min-height:450px;padding:85px 18px}.banner h2{font-size:clamp(55px,11vw,90px)}.banner-botanical{width:50%;opacity:.62}}
 @media(max-width:480px){.banner{min-height:360px;padding:76px 15px}.banner h2{font-size:clamp(48px,11vw,70px)}.banner-botanical{width:60%;opacity:.38}}
+
+/* Single static WebP botanical illustration — replace SVG art after asset upload */
+.banner .banner-botanical{display:none}
+.banner .banner-art{position:absolute;right:0;bottom:0;width:min(38%,560px);height:100%;object-fit:contain;object-position:right bottom;pointer-events:none;z-index:1}
+@media(max-width:800px){.banner .banner-art{width:46%;opacity:.8}}
+@media(max-width:480px){.banner .banner-art{width:52%;opacity:.45}}
