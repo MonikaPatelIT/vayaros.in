@@ -37,3 +37,10 @@ header.centered-header{display:flex;justify-content:center;align-items:center;mi
 .centered-header .logo{font-size:clamp(38px,4vw,54px);line-height:1.1}
 .hero .hero-meta,.hero .scroll{display:none}
 @media(max-width:650px){header.centered-header{min-height:76px;padding:12px 16px}.centered-header .logo{font-size:40px}}
+
+/* Multicolour banana leaf CTA refresh */
+.banner{isolation:isolate;min-height:clamp(440px,40vw,650px);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:90px 24px;background:#f26c27;overflow:hidden}
+.banner h2{position:relative;z-index:2;margin:0;text-align:center;font-size:clamp(64px,10vw,146px);line-height:.9;max-width:100%;text-wrap:balance}
+.banner-botanical{position:absolute;right:0;bottom:0;height:100%;width:min(40%,650px);object-fit:cover;object-position:right center;pointer-events:none;z-index:1}
+@media(max-width:800px){.banner{min-height:450px;padding:85px 18px}.banner h2{font-size:clamp(55px,11vw,90px)}.banner-botanical{width:50%;opacity:.62}}
+@media(max-width:480px){.banner{min-height:360px;padding:76px 15px}.banner h2{font-size:clamp(48px,11vw,70px)}.banner-botanical{width:60%;opacity:.38}}
