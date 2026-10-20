@@ -50,3 +50,27 @@ header.centered-header{display:flex;justify-content:center;align-items:center;mi
 .banner .banner-art{position:absolute;right:0;bottom:0;width:min(38%,560px);height:100%;object-fit:contain;object-position:right bottom;pointer-events:none;z-index:1}
 @media(max-width:800px){.banner .banner-art{width:46%;opacity:.8}}
 @media(max-width:480px){.banner .banner-art{width:52%;opacity:.45}}
+
+/* Seamless leaf art: fade the WebP's rectangular edges into the orange section. */
+.banner{background:#f26c27;isolation:isolate}
+.banner .banner-art{
+  width:clamp(190px,29vw,440px);
+  height:100%;
+  right:0;
+  top:0;
+  bottom:auto;
+  object-fit:cover;
+  object-position:100% 50%;
+  opacity:.9;
+  -webkit-mask-image:radial-gradient(ellipse 115% 85% at 100% 53%,#000 30%,transparent 93%);
+  mask-image:radial-gradient(ellipse 115% 85% at 100% 53%,#000 30%,transparent 93%);
+}
+.banner h2{max-width:88%;font-size:clamp(60px,8.7vw,132px)}
+@media(max-width:800px){
+ .banner .banner-art{width:36%;opacity:.63}
+ .banner h2{max-width:94%;font-size:clamp(50px,10.4vw,82px)}
+}
+@media(max-width:480px){
+ .banner .banner-art{width:44%;opacity:.38}
+ .banner h2{max-width:98%;font-size:clamp(40px,10vw,58px)}
+}
