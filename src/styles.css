@@ -74,3 +74,12 @@ header.centered-header{display:flex;justify-content:center;align-items:center;mi
  .banner .banner-art{width:44%;opacity:.38}
  .banner h2{max-width:98%;font-size:clamp(40px,10vw,58px)}
 }
+
+/* Official brand logo and silent pack-mockup product video */
+header.centered-header .logo-image{display:flex;align-items:center;justify-content:center;box-shadow:none;text-shadow:none;line-height:1}
+header.centered-header .logo-image img{display:block;width:clamp(100px,10vw,144px);height:auto;aspect-ratio:1;object-fit:contain;mix-blend-mode:multiply}
+header.centered-header{min-height:100px}
+.packet-circle{overflow:hidden;isolation:isolate}
+.packet-circle .packet-video{display:block;width:100%;height:100%;object-fit:cover;object-position:center 52%;border-radius:inherit;background:#3d2a1d}
+@media(max-width:650px){header.centered-header{min-height:85px}header.centered-header .logo-image img{width:108px}}
+@media(prefers-reduced-motion:reduce){.packet-video{animation:none}}
